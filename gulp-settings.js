@@ -1,0 +1,1 @@
+'use strict';module.exports = {	sassDir:             './scss',	sassMainFileName:    'main',	cssDir:              './css',	cssMainFileName:     'main',	imgSourceDir:        './sourceimages',	imgDir:              './images'};

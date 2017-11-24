@@ -1,0 +1,105 @@
+.aside {
+	padding: 50px 0;
+	background-color: $gray;
+	line-height: 1.35;
+
+	@include media('>=desktop') {
+		padding: 98px 0 68px;
+	}
+
+	.flex-container {
+		@include media('>=tablet') {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -15px;
+		}
+	}
+
+	.col {
+		margin: 0 0 25px;
+
+		@include media('>=tablet') {
+			width: 50%;
+			padding: 0 15px;
+		}
+
+		@include media('>=desktop') {
+			width: 25%;
+		}
+	}
+
+	h3 {
+		margin: 0 0 1em;
+
+		@include media('>=desktop') {
+			margin: 0 0 2.2em;
+		}
+	}
+
+	ul {
+		@extend %listreset;
+
+		li {
+			margin: 0 0 8px;
+		}
+
+		.active {
+			a {
+				text-decoration: underline;
+			}
+		}
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	p {
+		margin: 0 0 1.4em;
+	}
+}
+
+.newsletter-form {
+	display: flex;
+	
+	input {
+		flex: 1;
+		min-width: 1px;
+		border-radius: 10px 0 0 10px;
+		border: none;
+	}
+
+	button {
+		flex: 0 0 95px;
+		padding: 0.6em 0.7em;
+		width: 95px;
+		min-width: 1px;
+		border-radius: 0 10px 10px 0;
+		font-size: 15px;
+	}
+}
+
+[id="footer"] {
+	padding: 15px 0;
+	background-color: $primary-color;
+	text-align: center;
+	font-family: $base-font-serif;
+	color: $gray;
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
